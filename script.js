@@ -37,7 +37,7 @@ console.log(typeof(coder));
 
 //Ejercicio 4: Escribe un condicional if/else que imprima en la consola 'Eres mayor de edad' cuando la constante age tenga el valor correspondiente, si no es así, debe imprimir 'No eres aún mayor de edad'
 
-let age = 27
+let age = 18
 //Escribe tu código aquí
 if(age <= 18) {
     console.log("Eres mayor de edad")
@@ -167,10 +167,9 @@ for (let i = 0; i <= (programmers.length - 1); i++) {
 const names = ['Rocío', 'Cris', 'Antía', 'Judith', 'Noelia']
 
 //Escribe tu código aquí
-for (let i = 0; i <= (names.length - 1); i++) {
-    console.log(`Hola, mi nombre es ${names[i]}`);
+for (const name of names) {
+    console.log(`Hola, mi nombre es ${name}`);
 };
-
 //Ejercicio 15: Con un bucle while imprime en consola una lista del 1 al 5.
 
 //Escribe tu código aquí
@@ -189,18 +188,22 @@ do {
     numListTwo++;
 } while (numListTwo <= 5);
 
+
 //Ejercicio 17: Saludo Personalizado
 //Crea una función llamada saludar que tome un parámetro llamado nombre y devuelva un saludo personalizado. Luego, llama a la función con diferentes nombres y muestra el resultado en la consola.
 
-//Escribe tu código aquí
-let personName = prompt("¿Como te llamas?");
-console.log(`Bienvenido/a, ${personName}`);
+function saludar(nombre) {
+    return `Bienvenido/a, ${nombre}`;
+}
+console.log(saludar("Anais"));
+console.log(saludar("Calero"));
+console.log(saludar("Sergi"));
 
 //Ejercicio 18: Calcular el Área de un Rectángulo
 //Crea una función llamada calcularAreaRectangulo que tome dos parámetros (ancho y alto) y devuelva el área del rectángulo. Luego, llama a la función con diferentes valores de ancho y alto y muestra el resultado en la consola.
 
-//Escribe tu código aquí
-let rectangleWidth = prompt("Indica la ANCHURA, en CM");
-let rectangleHeight = prompt("Indica la ALTURA, en CM");
-let rectangleArea = (rectangleWidth * rectangleHeight);
-console.log(`El area es de ${rectangleArea} cm².`);
+function calcularAreaRectangulo(ancho, alto) {
+    return ancho * alto;
+}
+console.log(`El área es de ${calcularAreaRectangulo(5, 10)} cm²`);
+console.log(`El área es de ${calcularAreaRectangulo(3, 7)} cm²`);
