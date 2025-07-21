@@ -193,7 +193,7 @@ do {
 //Crea una función llamada saludar que tome un parámetro llamado nombre y devuelva un saludo personalizado. Luego, llama a la función con diferentes nombres y muestra el resultado en la consola.
 
 function saludar(nombre) {
-    return `Bienvenido/a, ${nombre}`;
+    return `Bienvenido/@, ${nombre}`;
 }
 console.log(saludar("Anais"));
 console.log(saludar("Calero"));
